@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Starter UI, by Keen IO</title>
+    <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/keen-dashboards.css"/>
+</head>
+<body class="application">
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./">M&uuml;nster Dashboard</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="https://keen.io">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Parkh&auml;user in M&uuml;nster
+                </div>
+                <div class="chart-stage">
+                    <iframe src="http://codeformuenster.org/parkhaeuser-mobile/"
+                            style="width:100%; height:350px;"></iframe>
+                </div>
+                <div class="chart-notes">
+                    This is a sample text region to describe this chart.
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="chart-wrapper">
+                <div class="chart-title">
+                    Parkh&auml;user in M&uuml;nster
+                </div>
+                <div class="chart-stage">
+                    <iframe src="http://c0dr.github.io/parkingApp/" style="width:100%; height:350px;"></iframe>
+                </div>
+                <div class="chart-notes">
+                    Notes go down here
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="chear-wrapper">
+        <div class="chart-title">
+            B&uuml;rgerb&uuml;ro
+        </div>
+        <div class="chart-strage">
+            <div id="buergerbuero">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        $.getJSON( "http://buergerbuero.codeformuenster.org/latest", function( data ) {
+            console.log(data);
+        });
+    });
+</script>
+</body>
+</html>
