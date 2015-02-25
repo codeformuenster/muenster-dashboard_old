@@ -1,0 +1,17 @@
+{
+    "app_name": "msdashboard",
+    "services": [
+        {
+            "service_name": "msdashboard-app",
+            "components": [
+                {
+                    "component_name": "html",
+                    "image": "registry.giantswarm.io/codeformuenster/msdashboard",
+                    "args": ["nginx"],
+                    "ports": ["80/tcp"],
+                    "domains": {"muensterdashboard.gigantic.io": "80"}
+                }
+            ]
+        }
+    ]
+}

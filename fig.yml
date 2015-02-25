@@ -1,0 +1,8 @@
+app:
+  build: .
+  volumes:
+    - docker/sites-enabled:/etc/nginx/sites-enabled
+    - docker/log:/var/log/nginx
+    - src:/var/www/html
+  ports:
+    - 4500:80
