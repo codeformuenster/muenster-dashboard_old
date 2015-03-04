@@ -1,6 +1,8 @@
 ---
-state: pre-release
+uri: //muensterdashboard.gigantic.io/
+state: pre-releaes
 ---
 
-Dashboard Starter Kit
-=====================
+Dashboard Münster
+=================
+
