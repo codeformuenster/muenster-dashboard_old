@@ -1,5 +1,5 @@
 ---
-uri: //muensterdashboard.gigantic.io/
+uri: http://muensterdashboard.gigantic.io/
 state: pre-releaes
 ---
 
